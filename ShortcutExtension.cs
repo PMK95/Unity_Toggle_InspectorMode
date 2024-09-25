@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
-public class ShortcutExtenstion : MonoBehaviour
+public class ShortcutExtension : MonoBehaviour
 {
     private const string menuPath = "Custom/ToggleInspectorDebugMode";
     private static readonly string shortcutId = $"Main Menu/{menuPath}";
