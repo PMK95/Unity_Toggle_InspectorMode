@@ -1,15 +1,15 @@
-# Unity_Toggle_InspectorMode
-Script that allows you to toggle Inspector Mode in UnityEditor.
+# Unity_Toggle_Inspector Debug Mode
+A script that allows you to toggle between Normal and Debug modes in Unity's Inspector using a custom shortcut.
 > [!NOTE]
-It was written in code using reflections due to internal access restrictions.
+This script uses reflection to access internal methods in Unity due to the restricted access to Inspector Mode functionalities.
 
 ## Script
-[ShortcutExtenstion.cs](ShortcutExtenstion.cs)
+[ShortcutExtension.cs](ShortcutExtension.cs)
 
 ## How To Use
-### Import Script [ShortcutExtenstion.cs](ShortcutExtenstion.cs)
-- **Script:**  Import the script into your unity project
+### Import Script
+- **Script:**  Import the [ShortcutExtension.cs](ShortcutExtension.cs) script into your Unity project.
 ### Check the shortcut
-- **Defalut Shortcut Bind:** Automatically register with Shortcut using the attribute [InitializeOnLoadMethod].
+- **Default Shortcut Binding:** The shortcut is automatically registered when Unity loads, using the [InitializeOnLoadMethod] attribute.
 > [!NOTE]
-ShortcutKeyCode is assigned "F12" by default, and if necessary, modify "menuPath" and "shortcutKey" in the script
+The default shortcut key is set to "F12." If you'd like to change it, you can modify the "menuPath" and "shortcutKey" variables in the script.
